@@ -122,6 +122,17 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'OFCNCOG2CU',
+
+      // Public API key: it is safe to commit it
+      apiKey: 'f54e21fa3a2a0160595bb058179bfb1e',
+
+      indexName: 'linguafranca', //TODO: change this otherwise 404
+
+      contextualSearch: true,
+    }
   } satisfies Preset.ThemeConfig,
 
   plugins: [
