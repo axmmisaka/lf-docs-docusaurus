@@ -46,6 +46,11 @@ const config: Config = {
             // Honestly, I recommend not using this because I am not confident with my coding skill......
             // TransformDynamicLFFileImportToStatic
           ],
+          versions: {
+            current: {
+              label: "nightly"
+            }
+          }
         },
         blog: {
           showReadingTime: true,
@@ -83,6 +88,11 @@ const config: Config = {
           href: 'https://github.com/lf-lang/',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
         },
       ],
     },
